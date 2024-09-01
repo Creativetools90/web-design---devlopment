@@ -1,0 +1,115 @@
+:root{
+    --base-color : #fff1e6;
+    --text-color : black;
+    --light-color : grey;
+    --accent-color : #0071ff;
+    --primery-color : rgb(34, 32, 32);
+    --s-color : rgba(77, 77, 77, 0.216);
+
+}
+
+.DarkMode {
+    --base-color : black;
+    --text-color :white;
+    --light-color : rgb(168, 168, 168);
+    --accent-color : #0071ff;
+    --primery-color : rgb(34, 32, 32);
+    --s-color : rgba(121, 121, 121, 0.175);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container h3{
+    font-size: clamp(1rem , 0.3043rem +  3.4783vw , 2rem);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.container p{
+    color: var(--light-color);
+    font-size: 13px;
+}
+
+.container .button{
+    display: flex;
+    gap: 5px;
+}
+
+.commonbtn{
+    color: white;
+    border: none;
+    padding:  7px 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.bluebtn{
+    background-color: var(--accent-color);
+}
+
+.blackbtn{
+    background-color: var(--primery-color);
+}
+
+.container2{
+    margin-top: 30px;
+    background-color: var(--s-color);
+}
+
+
+header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+#theme-switch{
+    border: none;
+    height: 35px;
+    width: 35px;
+    overflow: 0;
+    border-radius: 50%;
+    background-color: var(--s-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#theme-switch svg{
+    fill:  var(--text-color);
+   
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.DarkMode #theme-switch svg:first-child{
+    display: none;
+}
+
+.DarkMode #theme-switch svg:last-child{
+    display: block;
+}

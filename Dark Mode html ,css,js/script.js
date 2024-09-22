@@ -14,7 +14,3 @@ themeSwitch.addEventListener("click",()=>{
     DarkMode = localStorage.getItem('DarkMode')
     DarkMode !== 'active' ? enableDarkMode() : disableDarkMode();
 })
-
-
-
-
